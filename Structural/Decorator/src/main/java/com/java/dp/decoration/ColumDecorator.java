@@ -8,11 +8,11 @@ public class ColumDecorator implements Report {
         this.decoratedReport = report;
     }
      
-    public String getFirstColumnData() {
-        return decoratedReport.getFirstColumnData(); 
-    }
-     
     public Object[][] getReportData(String reportId) {
         return decoratedReport.getReportData(reportId);
+    }
+    
+    public String getFirstColumnData() {
+    	return decoratedReport.getFirstColumnData(); 
     }
 }
