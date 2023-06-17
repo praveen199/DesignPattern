@@ -1,7 +1,8 @@
-package com.java.dp.cartype;
+package factory;
 
-public class SmallCar extends Car {
+public class SmallCar implements Car{
 
+	@Override
 	public void construct() {
 		System.out.println("Small Car Constructed");
 	}
